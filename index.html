@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Valentine's Day!</title>
+<!--   <link rel="stylesheet" href="style.css"> -->
+  <style>
+    body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #e74c3c;
+}
+
+p {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#message {
+  text-align: justify;
+  font-style: italic;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#hearts {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #e74c3c;
+  animation: heartbeat 1.5s infinite ease-in-out;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.heart:nth-child(1) {
+  left: 20px;
+  top: 50px;
+  animation-delay: 0.2s;
+}
+
+.heart:nth-child(2) {
+  left: 50px;
+  top: 100px;
+  animation-delay: 0.4s;
+}
+
+.heart:nth-child(3) {
+  left: 80px;
+  top: 70px;
+  animation-delay: 0.6s;
+}
+
+.heart:nth-child(4) {
+  left: 120px;
+  top: 30px;
+  animation-delay: 0.8s;
+}
+
+.heart:nth-child(5) {
+  left: 150px;
+  top: 80px;
+  animation-delay: 1s;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Happy Valentine's Day!</h1>
+  <p>To my special someone...</p>
+  <section id="message">
+    </section>
+  <div id="hearts">
+    </div>
+</body>
+</html>
